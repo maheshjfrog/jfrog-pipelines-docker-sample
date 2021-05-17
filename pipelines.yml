@@ -70,9 +70,9 @@ pipelines:
       - name: promote_dbp_build
         type: PromoteBuild
         configuration:
-          targetRepository: demo-pipelines
+          targetRepository: docker-stage
           integrations:
-            - name: art
+            - name: my_art
           inputResources:
             - name: dbp_build_info
           outputResources:
